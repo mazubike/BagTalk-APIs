@@ -1,24 +1,18 @@
 {
   "name": "bagtalk",
   "version": "1.0.0",
+  "description": "Production-ready Node.js app for AWS Elastic Beanstalk",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev --turbopack",
-    "build": "next build", 
-    "start": "next start",
-    "lint": "next lint",
-    "postinstall": "npm run build"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@covalenthq/client-sdk": "^2.3.1",
     "axios": "^1.10.0",
     "bcrypt": "^6.0.0",
-    "crypto": "^1.0.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "graphql": "^16.11.0",
